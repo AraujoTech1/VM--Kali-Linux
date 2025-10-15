@@ -68,7 +68,7 @@ Implementar, executar e documentar ataques de força bruta controlados utilizand
 Crie uma pasta `wordlists/` no repositório com wordlists pequenas para demonstração (ex.: `small-userlist.txt`, `small-passlist.txt`).
 
 **Exemplo: nmap (enumeração)**  
-```bash
+No git bash:
 # varrer portas e serviços básicos
 nmap -sV -Pn -p 21,22,80,139,445 <IP_ALVO>
 Medusa — FTP (exemplo)
@@ -88,9 +88,10 @@ Para formulários HTML pode-se usar curl em um loop ou ferramentas específicas/
 
 # exemplo conceitual (não execute sem autorização)
 curl -X POST -d "username=USER&password=PASS&submit=Login" http://<IP_DVWA>/vulnerabilities/brute/login.php
+---
 
-
-Obs: adapte os comandos ao alvo; os módulos do Medusa são: ftp, http, http-form-post, smbnt, etc. (confira medusa -h).
+Obs:
+Adapte os comandos ao alvo; os módulos do Medusa são: ftp, http, http-form-post, smbnt, etc. (confira medusa -h).
 
 Validação e Evidências
 
@@ -102,7 +103,8 @@ medusa-ftp-results.txt
 
 screenshots (ex.: imgs/ftp-success.png, imgs/dvwa-attempts.png)
 
-Documente: qual usuário/senha funcionou (somente em ambiente de laboratório), número de tentativas, tempo, e impacto.
+Documente: 
+qual usuário/senha funcionou (somente em ambiente de laboratório), número de tentativas, tempo, e impacto.
 
 Recomendações de Mitigação
 
@@ -122,6 +124,7 @@ VM Ubuntu no Azure (resumo)
 
 Esta seção resume a criação de uma VM Ubuntu 24.04 LTS no Azure para estudos (detalhes completos em docs/azure-vm-setup.md se quiser expandir).
 
+ ---
 Funcionalidades:
 
 VM Ubuntu 24.04 LTS com Apache instalado
@@ -130,11 +133,15 @@ Acesso SSH (recomenda-se usar chave pública: não usar acesso por senha em prod
 
 UFW configurado para permitir Apache e SSH
 
-Ferramentas instaladas: git, curl, wget, htop, net-tools, ufw
+---
+Ferramentas instaladas: 
+git, curl, wget, htop, net-tools, ufw
 
 ⚠️ Importante: Se o seu README anterior expõe IPs e senhas, remova essas informações imediatamente e rotacione as credenciais.
 
-Tecnologias
++---
+
+Tecnologias:
 
 Kali Linux
 
@@ -149,6 +156,8 @@ Ubuntu 24.04 LTS
 Apache2
 
 Git
+
+---
 
 Pré-requisitos
 
@@ -179,44 +188,10 @@ Execute passos de enumeração (nmap) e depois execute medusa conforme os exempl
 
 Guarde os resultados em artifacts/ e tire screenshots em imgs/.
 
-Considerações éticas e legais
-
-Este repositório é para uso em laboratório controlado. Nunca realize ataques sem autorização explícita do proprietário do sistema alvo. Atividades ofensivas sem consentimento são crime em muitos países.
-
-Licença
-
-Este projeto está disponível sob a licença MIT — adapte conforme preferir.
-
-
 ---
+Considerações éticas e legais:
 
-## Passos Git sugeridos (para atualizar seu repositório)
-Se você já tem o repositório clonado localmente, rode:
-
-```bash
-# entrar na pasta do repo
-cd /caminho/para/seu-repo
-
-# criar branch de atualização (opcional mas recomendado)
-git checkout -b update-readme-challenge
-
-# substituir README.md pelo conteúdo acima (cole e salve)
-# se estiver no Linux/WSL, por exemplo:
-cat > README.md <<'EOF'
-... (cole todo o conteúdo do README acima) ...
-EOF
-
-# adicionar e commitar
-git add README.md
-git commit -m "Atualiza README: documenta desafio Kali+Medusa e resumo da VM Azure"
-
-# push para o GitHub
-git push origin update-readme-challenge
-
-# depois crie um Pull Request no GitHub e merge — ou, se quiser atualizar direto na main:
-# git checkout main
-# git merge update-readme-challenge
-# git push origin main
+Este repositório é para uso em laboratório controlado. Nunca realize ataques sem autorização explícita do proprietário do sistema alvo. 
 
 Se já expôs senhas/IPs — passos rápidos e essenciais
 
@@ -228,10 +203,4 @@ Se as credenciais estiverem em commits antigos, considere reescrever o históric
 
 Notifique qualquer serviço afetado.
 
-Se quiser, eu já faço as próximas etapas por você:
 
-gerar o README.md final (copio exatamente o conteúdo em um arquivo pronto para você colar),
-
-criar os arquivos auxiliares sugeridos (wordlists/README.md, docs/azure-vm-setup.md, artifacts/.gitkeep) e mostrar os comandos exatos git para adicionar tudo, ou
-
-criar um PR (se você me der acesso via paste do git remote? — mas NÃO preciso de senha: apenas faça localmente com os comandos acima).
