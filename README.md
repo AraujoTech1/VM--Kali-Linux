@@ -29,16 +29,15 @@ Este repositório reúne duas atividades de laboratório: (1) criação e config
 - [Pré-requisitos](#pré-requisitos)
 - [Como usar / reproduzir](#como-usar--reproduzir)
 - [Considerações éticas e legais](#considerações-éticas-e-legais)
-- [Licença](#licença)
 
 ---
 
-## Visão Geral
+## ☁️ Visão Geral
 Este projeto documenta tanto a criação de um ambiente Linux acessível para testes (VM Ubuntu) quanto a execução de um desafio de segurança ofensiva controlada. A ideia é oferecer um portfólio técnico com evidências e explicações, ideal para aprendizado e apresentação em plataformas como a DIO.
 
 ---
 
-## Desafio — Kali + Medusa
+## ☁️ Desafio — Kali + Medusa
 
 ### Objetivo
 Implementar, executar e documentar ataques de força bruta controlados utilizando **Medusa** em um ambiente de laboratório (Kali Linux -> serviços vulneráveis em Metasploitable2 / DVWA), e então propor medidas de mitigação.
@@ -120,12 +119,13 @@ Monitoramento e alertas (SIEM / logs).
 
 Não permitir contas administrativas com senhas por padrão.
 
-VM Ubuntu no Azure (resumo)
+---
+## ☁️ VM Ubuntu no Azure (resumo)
 
 Esta seção resume a criação de uma VM Ubuntu 24.04 LTS no Azure para estudos (detalhes completos em docs/azure-vm-setup.md se quiser expandir).
 
- ---
-Funcionalidades:
+---
+## ☁️ Funcionalidades:
 
 VM Ubuntu 24.04 LTS com Apache instalado
 
@@ -134,7 +134,7 @@ Acesso SSH (recomenda-se usar chave pública: não usar acesso por senha em prod
 UFW configurado para permitir Apache e SSH
 
 ---
-Ferramentas instaladas: 
+## ☁️ Ferramentas instaladas: 
 git, curl, wget, htop, net-tools, ufw
 
 ⚠️ Importante: Se o seu README anterior expõe IPs e senhas, remova essas informações imediatamente e rotacione as credenciais.
@@ -154,7 +154,7 @@ git, curl, wget, htop, net-tools, ufw
 
 ---
 
-Pré-requisitos
+## ☁️ Pré-requisitos
 
 Conta/instância local para rodar VirtualBox
 
@@ -184,7 +184,8 @@ Execute passos de enumeração (nmap) e depois execute medusa conforme os exempl
 Guarde os resultados em artifacts/ e tire screenshots em imgs/.
 
 ---
-Considerações éticas e legais:
+
+## ☁️ Considerações éticas e legais:
 
 Este repositório é para uso em laboratório controlado. Nunca realize ataques sem autorização explícita do proprietário do sistema alvo. 
 
