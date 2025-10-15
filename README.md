@@ -139,23 +139,18 @@ git, curl, wget, htop, net-tools, ufw
 
 ⚠️ Importante: Se o seu README anterior expõe IPs e senhas, remova essas informações imediatamente e rotacione as credenciais.
 
-+---
+---
 
-Tecnologias:
+## ☁️ Tecnologias
 
-Kali Linux
-
-Metasploitable2 / DVWA
-
-Medusa
-
-VirtualBox
-
-Ubuntu 24.04 LTS
-
-Apache2
-
-Git
+![Kali Linux](https://img.shields.io/badge/Kali%20Linux-Distribuição-009CFF?style=for-the-badge&logo=kali&logoColor=white&labelColor=1E2A47)
+![Metasploitable2](https://img.shields.io/badge/Metasploitable2-Vulnerável-009CFF?style=for-the-badge&logo=metasploit&logoColor=white&labelColor=1E2A47)
+![DVWA](https://img.shields.io/badge/DVWA-Lab%20Web-009CFF?style=for-the-badge&logo=web&logoColor=white&labelColor=1E2A47)
+![Medusa](https://img.shields.io/badge/Medusa-BruteForce-009CFF?style=for-the-badge&logo=gnu&logoColor=white&labelColor=1E2A47)
+![VirtualBox](https://img.shields.io/badge/VirtualBox-VM-009CFF?style=for-the-badge&logo=virtualbox&logoColor=white&labelColor=1E2A47)
+![Ubuntu](https://img.shields.io/badge/Ubuntu-24.04%20LTS-009CFF?style=for-the-badge&logo=ubuntu&logoColor=white&labelColor=1E2A47)
+![Apache](https://img.shields.io/badge/Apache-Web%20Server-009CFF?style=for-the-badge&logo=apache&logoColor=white&labelColor=1E2A47)
+![Git](https://img.shields.io/badge/Git-Versionamento-009CFF?style=for-the-badge&logo=git&logoColor=white&labelColor=1E2A47)
 
 ---
 
