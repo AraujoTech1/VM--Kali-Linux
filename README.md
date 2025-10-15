@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=azure,kali" width="520" />
+    <img src="https://skillicons.dev/icons?i=azure,kali" width="420" />
   </a>
 </p>
 
