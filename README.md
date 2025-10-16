@@ -6,7 +6,7 @@
 
 ---
 
-<h1 align="center">Laboratório: VM Ubuntu (Azure) & Desafio Kali + Medusa</h1>
+<h1 align="center">Laboratório: VM Ubuntu (Azure) & Kali + Medusa</h1>
 
 **Resumo do repositório**  
 Este repositório reúne duas atividades de laboratório: (1) criação e configuração de uma VM Ubuntu em Microsoft Azure (ambiente de estudos/servidor web Apache) e (2) um desafio prático de segurança ofensiva em ambiente controlado usando **Kali Linux** e a ferramenta **Medusa** para simular ataques de força bruta (FTP, Web/DVWA, SMB). O objetivo é documentar a montagem do ambiente, os testes realizados, as ferramentas/comandos usados e as recomendações de mitigação.
